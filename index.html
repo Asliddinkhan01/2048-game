@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2048 Simple</title>
+        <link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Sniglet" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div id="container">
+            <div id="splash" class="screen">
+                <h1>20<span class="char1">4</span><span class="char2">8</span></h1>
+                <button id="start" onclick="start()">New Game</button>
+            </div>
+            <div id="pause" class="screen">
+                <h1>Paused</h1>
+                <button onclick="reset()">reset</button>
+                <button onclick="resume()">continue</button>
+            </div>
+            <div id="end" class="screen">end</div>
+            <div id="game" class="screen">
+                <h1>2048</h1>
+                <div id="info">score:
+                    <span id="score"></span>
+                    <button type="button" id="pausebtn" onclick="pause()">Pause</button>
+                </div>
+                <div id="gamearea">
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                </div>
+            </div>
+        </div>
+        <div id="control">
+            <h2>Control</h2>
+            <button onclick="left()">left</button>
+            <button onclick="up()">up</button>
+            <button onclick="down()">down</button>
+            <button onclick="right()">right</button>
+        </div>
+        <p>Arrow keys work too!</p>
+<script src="main.js"></script>
+<script>
+    var q = 4;
+//массив элементов
+    var arr = document.getElementsByClassName("element");
+    init();
+    
+</script>        
+    </body>
+</html>
